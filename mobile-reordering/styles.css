@@ -1,0 +1,187 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 16px 4px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: background 0.5s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.toggleNav {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+input,
+.cta {
+  padding: 16px;
+  border: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin-inline-end: 12px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  color: #242424;
+  width: 196px;
+}
+
+input::placeholder,
+.cta {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+.cta {
+  background: gold;
+  color: #242424;
+  font-weight: 500;
+  height: 48px;
+  transition: background 0.4s;
+}
+
+.cta:hover {
+  background: goldenrod;
+  cursor: pointer;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top,
+.flex-nav,
+.hero,
+.details,
+.signup {
+  margin-block-end: 24px;
+}
+
+section,
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 24px 16px;
+  color: white;
+  font-weight: 100;
+}
+
+.details p:last-of-type {
+  margin-block-start: 16px;
+}
+
+/* Flex container */
+.flex-nav ul {
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  display: flex;
+}
+
+.flex-nav li {
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+@media all and (max-width: 960px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+}
+
+@media all and (max-width: 560px) {
+  input[type="text"],
+  input[type="email"] {
+    margin-inline-end: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    color: #242424;
+    width: 128px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .toggleNav {
+    display: block;
+    padding: 24px 16px;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: flex;
+  }
+
+  .flex-nav {
+    order: -4;
+  }
+
+  .top {
+    order: -3;
+  }
+
+  .details {
+    order: -2;
+  }
+
+  .signup {
+    order: -1;
+  }
+}
