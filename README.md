@@ -1,3 +1,3 @@
 # What The Flexbox
 
-Exercises of the Wes Bos' course [What The Flexbox](https://flexbox.io/)
+Exercises of the [What The Flexbox](https://flexbox.io/) course, by [Wes Bos](https://twitter.com/wesbos).
