@@ -11,8 +11,12 @@
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 1rem;
 
+  display: -webkit-box;
+
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -59,17 +63,22 @@
 
 /* Flexbox styles start here */
 .container {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   height: 100vh;
 }
 
 .box {
   flex-basis: 250px;
+  -webkit-box-flex: 1;
   flex-grow: 1;
 }
 
 .box3 {
+  -webkit-box-flex: 4;
   flex-grow: 4;
 }
