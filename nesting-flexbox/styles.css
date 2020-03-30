@@ -25,6 +25,7 @@ body {
 }
 
 .slider {
+  -webkit-margin-after: 0.5rem;
   margin-block-end: 0.5rem;
 }
 
@@ -38,6 +39,7 @@ a {
   font-size: 15px;
   background: rgba(0, 0, 0, 0.2);
   padding: 1rem;
+  -webkit-transition: background 0.5s;
   transition: background 0.5s;
 }
 
@@ -47,21 +49,28 @@ a:hover {
 
 .slider-nav ul {
   list-style: none;
+  display: -webkit-box;
   display: flex;
   width: 100%;
   height: 100%;
+  -webkit-box-align: stretch;
   align-items: stretch;
 }
 
 .slider-nav li {
+  -webkit-box-flex: 2;
   flex: 2;
   width: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: stretch;
   align-items: stretch;
 }
 
 .slider-nav .arrow {
+  -webkit-box-flex: 1;
   flex: 1;
 }
 
@@ -73,7 +82,10 @@ a:hover {
 .slider-nav a {
   width: 100%;
   text-align: center;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
