@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a {
+  color: white;
+}
+
+.pricing-grid {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.plan {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 2rem 1rem 1.2rem 1rem;
+}
+
+.plan p {
+  margin-block-end: 1.5rem;
+  text-align: center;
+}
+
+.plan ul {
+  list-style: none;
+  margin-block-end: 1rem;
+}
+
+.plan ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.plan ul li:last-child {
+  border-bottom: none;
+}
+
+.plan .price {
+  font-family: "Code Saver", monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.plan a {
+  background: #feff00;
+  padding: 1rem;
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: background 0.5s;
+}
+
+.plan a:hover {
+  background: #f1f10e;
+}
+
+.plan h2 {
+  font-size: 2.5rem;
+  font-family: "TG Praktikal", serif;
+  margin-block-end: 2rem;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+}
